@@ -1,0 +1,23 @@
+div.picture {
+	text-align: center;
+}
+a:link, a:visited {
+  background-color: #a3a3a3;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: black;
+}
+body {
+	background-color: #b0e0e6;
+}
+h1 {
+	text-align: center;
+}
+p {
+	text-align: center;
+}
