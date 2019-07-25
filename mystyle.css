@@ -1,17 +1,11 @@
 div.picture {
 	text-align: center;
 }
-a:link, a:visited {
-  background-color: #a3a3a3;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+
+.center {
+  margin: auto;
 }
-a:hover, a:active {
-  background-color: black;
-}
+
 body {
 	background-color: #b0e0e6;
 }

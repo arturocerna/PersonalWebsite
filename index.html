@@ -1,20 +1,48 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8"/>	
-<title>Arturo Cerna</title>
-
-<link rel="stylesheet" type="text/css" href="mystyle.css" />
-
-</head>
-<body>
-<div class = "picture">	
-	<img src="headshot.jpg" alt="my head" width="127" height="127">
-</div>
-<h1>Welcome to my personal webpage!</h1>
-<p> Here you will be able to find out alot about me. Whether it be what type of music I like or what type of projects I have done, it will all be here.</p>
-
-<a href="projects/index.html/">Projects</a>
-
-</body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Arturo Cerna</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="mystyle.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class = "picture">	
+				<img src="headshot.jpg" class="rounded-circle" alt="my head" width="127" height="127">
+				</div>
+				<h1>Welcome to my personal webpage!</h1>
+				<!--<p> Maybe add an intro paragraph to this page.
+				</p> -->
+			</div>
+			<!--start of bar menu-->
+			<div class="row">
+				<div class="center">
+					<div class="btn-group btn-group-lg">
+						<a class="btn btn-dark" href="index.html">Home</a>
+						<a class="btn btn-dark" href="projects/index.html">Projects</a>	
+						<div class="btn-group btn-group-lg"> 
+							<button class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+								Reviews
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="reviews/index.html">Reviews Home</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="reviews/music.html">Music</a>
+								<a class="dropdown-item" href="reviews/movies.html">Movies</a>
+								<a class="dropdown-item" href="reviews/books.html">Books</a>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- end of site wrapper  -->
+	</body>
 </html>
