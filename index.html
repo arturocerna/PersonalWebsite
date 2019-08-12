@@ -1,48 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8"/>	
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Arturo Cerna</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="mystyle.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		</head>
-	<body>
-		<div class="container">
-			<div class="header">
-				<div class = "picture">	
-				<img src="headshot.jpg" class="rounded-circle" alt="my head" width="127" height="127">
-				</div>
-				<h1>Welcome to my personal webpage!</h1>
-				<!--<p> Maybe add an intro paragraph to this page.
-				</p> -->
-			</div>
-			<!--start of bar menu-->
-			<div class="row">
-				<div class="center">
-					<div class="btn-group btn-group-lg">
-						<a class="btn btn-dark" href="index.html">Home</a>
-						<a class="btn btn-dark" href="projects/index.html">Projects</a>	
-						<div class="btn-group btn-group-lg"> 
-							<button class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
-								Reviews
-							</button>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="reviews/index.html">Reviews Home</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="reviews/music.html">Music</a>
-								<a class="dropdown-item" href="reviews/movies.html">Movies</a>
-								<a class="dropdown-item" href="reviews/books.html">Books</a>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div>
-		<!-- end of site wrapper  -->
-	</body>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Arturo Cerna</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="mystyle.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="headshot.jpg" alt="headshot" class="rounded-circle">
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Arturo Cerna</p>
+                <li class="active">
+						<a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="projects/index.html">Projects</a>
+                </li>
+                <li>
+                    <a href="Resume.pdf">CV</a>
+                </li>
+                <li>
+                    <a href="#reviewSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reviews</a>
+                    <ul class="collapse list-unstyled" id="reviewSubmenu">
+                        <li>
+                            <a href="reviews/books.html">Books</a>
+                        </li>
+                        <li>
+                            <a href="#">Movies</a>
+                        </li>
+                        <li>
+                            <a href="#">Music</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.linkedin.com/in/arturo-cerna-6a4b71165/">LinkedIn</a>
+                            </li>   
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.instagram.com/fried_donut/">Instagram</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://twitter.com/bobbycheeks">Twitter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/arturocerna">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2>About Me</h2>
+            <p> 
+                Hey! My name is Arturo Cerna and I currently live in my home town of Santa Cruz, California. I love to get distracted by sports while
+                programming and drink a bit too much coffee. Recently, I accomplished my goal of graduating from the University of California, San Diego,
+                and I am seeking my first software development job or internship. Once I gain experience, my hope is to venture into the animation
+                or game development industry. I am motivated to continue on with my career with enthusiasm and determination. To learn more about 
+                my projects, head over to my CV for a brief discription of each project or the projects page where I go in depth about each individual project in detail.
+                This website will always be a work in progress, so don't be afraid to drop by every once in a while and see my updates!
+
+            </p>
+            
+            <div class="line"></div>
+            <h2>About the Review Page</h2>
+            <p>
+                I am a really big pop culture fan, so I'd love to be able to write my thoughts about my thoughts on any movie, book, 
+                or album that I consume while also making it a programming project. Right now the page is pretty much non-existant right now,
+                but I plan to make it an all out stop for my opinions on popular media! 
+            </p>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        // script for hiding/showing the sidebar
+        $(document).ready(function () {
+            document.getElementsByTagName("html")[0].style.visibility = "visible";
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
 </html>
