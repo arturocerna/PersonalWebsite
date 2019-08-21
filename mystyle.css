@@ -151,6 +151,7 @@ a.article:hover {
     background-color: #6d7fcc;
     border: 2px #C2D4EC;
     padding: 5px;
+    margin: 5px;
 } 
 .fa-linkedin {
     background: #007bb5;

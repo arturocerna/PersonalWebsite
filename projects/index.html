@@ -35,6 +35,9 @@
                     <a href="index.html">Projects</a>
                 </li>
                 <li>
+                    <a href="Resume.pdf">CV</a>
+                </li>
+                <li>
                     <a href="#reviewSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reviews</a>
                     <ul class="collapse list-unstyled" id="reviewSubmenu">
                         <li>
@@ -59,23 +62,24 @@
                         <i class="fas fa-align-left"></i>
                         <span>Menu</span>
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.linkedin.com/in/arturo-cerna-6a4b71165/">LinkedIn</a>
+                            </li>   
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.instagram.com/fried_donut/">Instagram</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
+                                <a class="nav-link" href="https://twitter.com/bobbycheeks">Twitter</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
+                                <a class="nav-link" href="https://github.com/arturocerna">GitHub</a>
                             </li>
                         </ul>
                     </div>
@@ -93,6 +97,16 @@
                     <div class="card" data-panel="panel-2">
                         <div class="card-body">
                             <h5 class="card-title"> Actor's Guild </h5>
+                        </div>
+                    </div>
+                    <div class="card" data-panel="panel-3">
+                        <div class="card-body">
+                            <h5 class="card-title"> Raytracing </h5>
+                        </div>
+                    </div>
+                    <div class="card" data-panel="panel-4">
+                        <div class="card-body">
+                            <h5 class="card-title"> Tip Calculator </h5>
                         </div>
                     </div>
                 </div>
@@ -170,6 +184,37 @@
                         <hr class="my-4">
                         <a href="https://github.com/arturocerna/CSE-100-Final-Project" class="btn btn-primary"> Github </a>
 
+                    </div>
+                </div>
+                <div class="jumbotron-fluid" id="panel-3">
+                    <div class="container">
+                        <h3 class="display-4">Raytracing</h3>
+                        <p class="lead">
+                            For this Project, I was given the code for basic raytracing, but I added more advanced features, such as motion blur
+                            and soft shadows, to make the scene more realistic. <img src="Raytracing1.png" alt="ratracying"><br>
+                            As you can see from the image, the shadows of the objects in this scene are not so sharply defined. There is also some anti-aliasing 
+                            as I added jittered stochastic supersampling to every pixel being raytraced, then average the result to get the value for the pixel rendered.
+                            As the raytracing is implemented with a kd-tree to make calculating each ray more efficient, I need to manipulate the tree in order to make it
+                            seem like the middle sphere is not moving. I do so by making the ball large before the render, then shrinking it before any raytracing happens.
+                            <img src="Raytracing2.png" alt="ratracying"> (before any rendering) <br> <br>
+                            These images only show off the type of advance techniques you can use in raytracing. The exciting stuff happens when you can
+                            put it into a nice scene or animation. I was able to make simple animations by taking 120 bmp files and updating the position of objects
+                            each frame. Here is one of someone playing frisbee! <br>
+                        </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5_feRcnAsNE" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="jumbotron-fluid" id="panel-4">
+                    <div class="container">
+                        <h3 class="display-4">Tip Calculator(javascript)</h3>
+                        <p class="lead">
+                            This is a really simple Tip Calculator I made in order to really get comfortable with both
+                            CSS and javascript. Unlike this website, I use pure CSS and javascript, so I can practice the 
+                            basics. Now when I go out with my friends I can use this instead of the convenient calculator on everyone's phone.
+                        </p>
+                        <hr class="my-4">
+                        <a href="TipCalculator/index.html" class="btn btn-primary"> Tip Calculator </a>
                     </div>
                 </div>
             </div>
